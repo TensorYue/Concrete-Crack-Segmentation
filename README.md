@@ -1,7 +1,8 @@
 # Concrete-Crack-Segmentation
-This work is done by Chengyou Yue and Sharbel Nashar, for the detailed instruction, please view Instruction.ppt.
-
-Comparison between Traditional U-Net and Inception U-Net while training on biased dataset.
+## Acknowledgement
+This work is done by Chengyou Yue and Sharbel Nashar.
+## Abstract
+Comparison between Traditional U-Net and Inception U-Net while training on biased dataset. For the detailed instruction, please view Instruction.ppt.
 ### Result with U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/c3e10175-2e13-48d4-af7c-ed818044adc6)
 ### Restul with Inception U-Net
