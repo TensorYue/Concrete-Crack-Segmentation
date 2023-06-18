@@ -1,7 +1,12 @@
 # Concrete-Crack-Segmentation
 This work is done by Chengyou Yue and Sharbel Nashar, for the detailed instruction, please view Instruction.ppt.
-Comparison between Traditional U-Net and Inception U-Net.
-References
+
+Comparison between Traditional U-Net and Inception U-Net while training on biased dataset.
+![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/c3e10175-2e13-48d4-af7c-ed818044adc6)
+
+![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/2fe61ed0-54c1-41d2-9c90-0ff08cdcb88d)
+
+##References
 1.	Zhenqing Liu, Yiwen Cao, Yize Wang, Wei Wang, Computer vision-based concrete crack detection using U-net fully convolutional networks, Automation in Construction, 104 (2019) 129-139, https://doi.org/10.1016/j.autcon.2019.04.005.
 2.	F. Chen, M. Jahanshahi, NB-CNN: deep learning-based crack detection using convolutional neural network and Naïve Bayes data fusion, IEEE Trans. Ind. Electron. 65 (2018) 4392–4400, https://doi.org/10.1109/TIE.2017.2764844
 3.	R. Li, Y. Yuan, W. Zhang, Y. Yuan, Unified vision-based methodology for simultaneous concrete defect detection and geolocalization, Comput. Aided Civ. Inf. Eng. 33 (2018) 527–544, https://doi.org/10.1111/mice.12351
