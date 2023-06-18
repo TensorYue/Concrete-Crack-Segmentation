@@ -1,4 +1,5 @@
 # Concrete-Crack-Segmentation
+This work is done by Chengyou Yue and Sharbel Nashar, for the detailed instruction, please view Instruction.ppt.
 Comparison between Traditional U-Net and Inception U-Net.
 References
 1.	Zhenqing Liu, Yiwen Cao, Yize Wang, Wei Wang, Computer vision-based concrete crack detection using U-net fully convolutional networks, Automation in Construction, 104 (2019) 129-139, https://doi.org/10.1016/j.autcon.2019.04.005.
