@@ -4,11 +4,47 @@ This is a two-phase project where the improvement has been made upon the impleme
 
 ## Phase 1 - Implementation of U-Net for Concrete Crack Segmentation
 
-U-Net is a convolutional neural network (CNN) architecture specifically designed for image segmentation, particularly in biomedical imaging [1], though it’s now widely used in other domains. Considering its capability of identifying image paterns, it has also been implemented for Concrete Crack Segmentation [2, 3, 4, 5].
+### Introduction
 
-With the masked image set provided by [7], 
+U-Net is a convolutional neural network (CNN) architecture specifically designed for image segmentation, particularly in biomedical imaging [1], though it’s now widely used in other domains. Considering its capability of identifying image paterns, it has also been implemented for Concrete Crack Segmentation [2, 3, 4, 5, 6].
+
+<img width="1050" height="407" alt="image" src="https://github.com/user-attachments/assets/507e5384-20fb-4c01-8819-987f554b8b19" />
+
+_U-Net Architecture_
+
+### Dataset
+
+With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we can train our own network and perform further analysis upon the result. 
+
+<img width="960" height="240" alt="image" src="https://github.com/user-attachments/assets/03e314d1-f3b9-4ff7-8bcb-eac24a04cc40" /> 
+
+_Masked Image_
+
+### Training
+
+Please note that the dataset includes two subsets: CFD, and Crack 500, we created the training set and trained the Phase 1 network on both of them, and tested the trained result with images outside of the training set. The network setup and training can be found in 'Traditional U-Net.ipynb'.
+
+<img width="1089" height="403" alt="image" src="https://github.com/user-attachments/assets/b8d908f8-97c0-47cd-90ae-20b1fedb8aa2" />
+
+### Testing
+
+_Testing Result of Network Trained on Both Subsets_
+
+The network is capable to deliver result in accuracy.
 
 ## Phase 2 - Improvement of U-Net on Shallow Crack Segmentation
+
+### Introduction
+
+A question has risen while testing the network with dataset: 
+
+**The accuracy of result is highly depend on the similarity between the training set and testing set, is that possible to have a network trained on one dataset (with similar pattern) and still be capable to segment crack on another dataset (with different patterns)?**
+
+<img width="580" height="407" alt="image" src="https://github.com/user-attachments/assets/9b9a3681-7c81-4402-b3ca-ca6d2530200d" />
+
+_Testing Result If Trained on Crack 500 and Tested on CFD_
+
+To answer the question, we need to understand what patterns 
 
 ## Abstract
 Comparison between Traditional U-Net and Inception U-Net while training on biased dataset. For the detailed instruction, please view Instruction.ppt.
