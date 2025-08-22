@@ -66,7 +66,7 @@ The crack is more distinguished when is deep and is located on a smooth surface,
 
 **1. Depth of the Crack (Shallow vs. Deep) - MaxPooling**
 
-**2. Roughness of the Surface (Smooth vs. Rough) - AveragePooling**
+**2. Roughness of the Surface (Smooth vs. Rough) - Increased Kernel Size, AveragePooling**
 
 <img width="491" height="409" alt="image" src="https://github.com/user-attachments/assets/71a951c3-6ddb-4386-bf8e-614ae972c384" />
 
