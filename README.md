@@ -14,23 +14,21 @@ _U-Net Architecture_
 
 ### Dataset
 
-With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we can train our own network and perform further analysis upon the result. 
+With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we can train our own mddel and perform further analysis upon the result. 
 
 <img width="960" height="240" alt="image" src="https://github.com/user-attachments/assets/03e314d1-f3b9-4ff7-8bcb-eac24a04cc40" /> 
 
 _Masked Image_
 
-### Training
+### Training & Testing
 
-Please note that the dataset includes two subsets: CFD, and Crack 500, we created the training set and trained the Phase 1 network on both of them, and tested the trained result with images outside of the training set. The network setup and training can be found in 'Traditional U-Net.ipynb'.
+Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 1 Model on both of them, and tested the Model with images outside of the training set. The Model Setup and training can be found in 'Traditional U-Net.ipynb'.
+
+The network is capable to deliver result in accuracy.
 
 <img width="1089" height="403" alt="image" src="https://github.com/user-attachments/assets/b8d908f8-97c0-47cd-90ae-20b1fedb8aa2" />
 
-### Testing
-
-_Testing Result of Network Trained on Both Subsets_
-
-The network is capable to deliver result in accuracy.
+_Testing Result of Phase 1 Model Trained on Both Subsets_
 
 ## Phase 2 - Improvement of U-Net on Shallow Crack Segmentation
 
@@ -40,16 +38,67 @@ A question has risen while testing the network with dataset:
 
 **The accuracy of result is highly depend on the similarity between the training set and testing set, is that possible to have a network trained on one dataset (with similar pattern) and still be capable to segment crack on another dataset (with different patterns)?**
 
+Or in other word:
+
+**Is it possible to transfer the experience from a pattern onto another?**
+
+Another training was conducted to train the Phase 1 Model with CRACK 500 subset and test it on CFD subset, the result wasn't very acceptable.
+
 <img width="580" height="407" alt="image" src="https://github.com/user-attachments/assets/9b9a3681-7c81-4402-b3ca-ca6d2530200d" />
 
-_Testing Result If Trained on Crack 500 and Tested on CFD_
+_Testing Result If Trained on CRACK 500 and Tested on CFD_
 
-To answer the question, we need to understand what patterns 
+### Idea
 
-## Abstract
-Comparison between Traditional U-Net and Inception U-Net while training on biased dataset. For the detailed instruction, please view Instruction.ppt.
+To answer the question, we need to first understand which patterns the crack has, and how the patterns could affect the training process.
+
+The patterns can be roughly classified into two classes:
+
+1. Depth of the Crack (Shallow vs. Deep) - Affect the Pixel's Color Value
+
+2. Roughness of the Surface (Smooth vs. Rough) - Affect the Background Noise
+
+The crack is more distinguished when is deep and is located on a smooth surface, and is less distinguished when is shallow on a rough one. If the model is trained on this type of images, it can easily produce biased result while testing on the unfamiliar patterns (overfitting). 
+
+**For improving the accuracy, we want the model to experience as many patterns as possible. This is equivalent to average the differences between patterns as much as possible, and it can be achived by introducing filters before performing the segmentation process:**
+
+**1. Depth of the Crack (Shallow vs. Deep) - MaxPooling**
+
+**2. Roughness of the Surface (Smooth vs. Rough) - AveragePooling**
+
+<img width="491" height="409" alt="image" src="https://github.com/user-attachments/assets/71a951c3-6ddb-4386-bf8e-614ae972c384" />
+
+_Classification of Crack Patterns_
+
+ This idea was also mentioned by other researchers [8, 9] when designing the network for a broader application.
+
+## Redesigned Network
+
+<img width="280" height="294" alt="image" src="https://github.com/user-attachments/assets/df402202-8b48-42cd-a2c3-176f7434fc85" />
+
+_Original Encoder_
+
+<img width="964" height="422" alt="image" src="https://github.com/user-attachments/assets/ee0d300f-7b58-4169-8574-e4595c5be0da" />
+
+_Redesigned Encoder_
+
+<img width="1050" height="407" alt="image" src="https://github.com/user-attachments/assets/017138e6-4be4-499d-bed1-36a1d9750ff8" />
+
+_Redesigned Network_
+
+### Training & Testing
+
+Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 2 Model on CRACK 500 subset only, and tested the Model with images from both subsets. The Model Setup and training can be found in 'Inception U-Net.ipynb'.
+
+<img width="1089" height="403" alt="image" src="https://github.com/user-attachments/assets/3161b7e5-b838-4c3a-b7d4-ed8d414f5b7e" />
+
+_Testing Result of Phase 2 Model Trained on CRACK500 and Both_
+
+## Comparison
+
 ### Result with U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/c3e10175-2e13-48d4-af7c-ed818044adc6)
+
 ### Restul with Inception U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/2fe61ed0-54c1-41d2-9c90-0ff08cdcb88d)
 
