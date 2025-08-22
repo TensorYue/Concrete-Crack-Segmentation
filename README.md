@@ -72,9 +72,9 @@ The crack is more distinguished when is deep and is located on a smooth surface,
 
 _Classification of Crack Patterns_
 
- This idea was also mentioned by other researchers [8, 9] when designing the network for a broader application.
+ Similar effort was also made by other researchers [3, 8, 9] when designing the network for a broader application.
 
-## Redesigned Network
+## Redesigned Encoder
 
 <img width="280" height="294" alt="image" src="https://github.com/user-attachments/assets/df402202-8b48-42cd-a2c3-176f7434fc85" />
 
