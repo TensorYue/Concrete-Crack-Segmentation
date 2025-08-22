@@ -4,6 +4,10 @@ This is a two-phase project where the improvement has been made upon the impleme
 
 ## Phase 1 - Implementation of U-Net on Concrete Crack Segmentation
 
+
+
+## Phase 2 - Improvement of U-Net on Shallow Crack Segmentation
+
 ## Abstract
 Comparison between Traditional U-Net and Inception U-Net while training on biased dataset. For the detailed instruction, please view Instruction.ppt.
 ### Result with U-Net
