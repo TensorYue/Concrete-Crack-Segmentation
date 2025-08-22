@@ -96,7 +96,7 @@ Please note that the dataset includes two subsets: CFD, and CRACK 500, we create
 
 _Testing Result of Phase 2 Model Trained on CRACK500 and Both_
 
-## Comparison
+## Phase 2 Comparison
 
 ### Result with U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/c3e10175-2e13-48d4-af7c-ed818044adc6)
