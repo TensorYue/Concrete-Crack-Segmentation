@@ -101,7 +101,7 @@ _Testing Result of Phase 2 Model Trained on CRACK500 and Both_
 ### Result with U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/c3e10175-2e13-48d4-af7c-ed818044adc6)
 
-### Restul with Inception U-Net
+### Result with Inception U-Net
 ![image](https://github.com/TensorYue/Concrete-Crack-Segmentation/assets/112973740/2fe61ed0-54c1-41d2-9c90-0ff08cdcb88d)
 
 
