@@ -42,7 +42,7 @@ A question has risen while testing the network with dataset:
 
 Or in other word:
 
-**Is it possible to transfer the experience from a pattern onto another?**
+**Is it possible to transfer the experience from one pattern onto another?**
 
 Another training was conducted to train the Phase 1 Model with CRACK 500 subset and test it on CFD subset, the result wasn't very acceptable.
 
