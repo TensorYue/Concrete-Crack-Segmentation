@@ -1,6 +1,6 @@
 # Concrete-Crack-Segmentation
 
-Please see 'Instruction.ppt' for more details.
+**Please see 'Instruction.ppt' for more details.**
 
 This is a two-phase project where the improvement has been made upon the implementation of U-Net in phase 1.
 
