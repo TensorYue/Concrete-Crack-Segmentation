@@ -18,6 +18,11 @@ _U-Net Architecture_
 
 With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we can train our own mddel and perform further analysis upon the result. 
 
+Please note that the dataset used in this project is extracted from the large dataset provided by the reference, they are:
+
+1. CFD 107 images
+2. CRACK500 107 images
+
 <img width="960" height="240" alt="image" src="https://github.com/user-attachments/assets/03e314d1-f3b9-4ff7-8bcb-eac24a04cc40" /> 
 
 _Masked Image_
