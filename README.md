@@ -18,13 +18,13 @@ _U-Net Architecture_
 
 With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we can train our own mddel and perform further analysis upon the result. 
 
-**Please note that the dataset used in this project is extracted from the large dataset provided by the reference, they are:**
+Please note that the dataset used in this project is extracted from the large dataset provided by the reference, they are:
 
-**1. CFD Subset | 107 images for training | 5 images for testing**
+1. CFD Subset | 107 images for training | 5 images for testing
 
-**2. CRACK500 Subset | 107 images for training | 5 images for testing**
+2. CRACK500 Subset | 107 images for training | 5 images for testing
 
-**Reader can refer to the 'Dataset' folders for those images.**
+Reader can refer to the 'Dataset' folders for those images
 
 <img width="960" height="240" alt="image" src="https://github.com/user-attachments/assets/03e314d1-f3b9-4ff7-8bcb-eac24a04cc40" /> 
 
@@ -46,11 +46,11 @@ _Testing Result of Phase 1 Model Trained on Both Subsets_
 
 A question has risen while testing the network with dataset: 
 
-**The accuracy of result is highly depend on the similarity between the training set and testing set, is that possible to have a network trained on one dataset (with similar pattern) and still be capable to segment crack on another dataset (with different patterns)?**
+The accuracy of result is highly depend on the similarity between the training set and testing set, is that possible to have a network trained on one dataset (with similar pattern) and still be capable to segment crack on another dataset (with different patterns)?
 
 Or in other word:
 
-**Is it possible to transfer the experience from one pattern onto another?**
+Is it possible to transfer the experience from one pattern onto another?
 
 Another training was conducted to train the Phase 1 Model with CRACK 500 subset and test it on CFD subset, the result wasn't very acceptable.
 
@@ -70,11 +70,11 @@ The patterns can be roughly classified into two classes:
 
 The crack is more distinguished when is deep and is located on a smooth surface, and is less distinguished when is shallow on a rough one. If the model is trained on this type of images, it can easily produce biased result while testing on the unfamiliar patterns (overfitting). 
 
-**For improving the accuracy, we want the model to experience as many patterns as possible. This is equivalent to average the differences between patterns as much as possible, and it can be achived by introducing filters before performing the segmentation process:**
+For improving the accuracy, we want the model to experience as many patterns as possible. This is equivalent to average the differences between patterns as much as possible, and it can be achived by introducing filters before performing the segmentation process:
 
-**1. Depth of the Crack (Shallow vs. Deep) - MaxPooling**
+1. Depth of the Crack (Shallow vs. Deep) - MaxPooling
 
-**2. Roughness of the Surface (Smooth vs. Rough) - Increased Kernel Size, AveragePooling**
+2. Roughness of the Surface (Smooth vs. Rough) - Increased Kernel Size, AveragePooling
 
 <img width="491" height="409" alt="image" src="https://github.com/user-attachments/assets/71a951c3-6ddb-4386-bf8e-614ae972c384" />
 
