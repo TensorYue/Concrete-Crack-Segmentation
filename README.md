@@ -1,6 +1,6 @@
 # Concrete-Crack-Segmentation
 
-**Please see 'Instruction.pptx' for more details.**
+**Please see jupyter notebooks for more details.**
 
 This is a two-phase project where the improvement has been made upon the implementation of U-Net in phase 1.
 
