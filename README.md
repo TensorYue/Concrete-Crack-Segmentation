@@ -96,6 +96,8 @@ _Modified Encoder_
 
 _Modified Network_
 
+Inspired by the Inception Net [9], we shall call this Modified Network the Inception U-Net.
+
 ### Training & Testing
 
 Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 2 Model on CRACK 500 subset only, and tested the Model with images from both subsets. The Model Setup and training can be found in 'Phase 2 Inception U-Net.ipynb'.
