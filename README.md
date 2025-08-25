@@ -21,6 +21,7 @@ With the masked image set provided by Eric Bianchi and Matthew Hebdon [7], we ca
 **Please note that the dataset used in this project is extracted from the large dataset provided by the reference, they are:**
 
 **1. CFD Subset | 107 images for training | 5 images for testing**
+
 **2. CRACK500 Subset | 107 images for training | 5 images for testing**
 
 **Reader can refer to the 'Dataset' folders for those images.**
