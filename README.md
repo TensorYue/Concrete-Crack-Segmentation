@@ -104,7 +104,7 @@ Please note that the dataset includes two subsets: CFD, and CRACK 500, we create
 
 <img width="1089" height="403" alt="image" src="https://github.com/user-attachments/assets/3161b7e5-b838-4c3a-b7d4-ed8d414f5b7e" />
 
-_Testing Result of Phase 2 Model Trained on CRACK500 and Both_
+_Testing Result of Phase 2 Model Trained on CRACK500_
 
 ## Phase 2 Comparison
 
