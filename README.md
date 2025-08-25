@@ -74,7 +74,7 @@ _Classification of Crack Patterns_
 
  Similar effort was also made by other researchers [3, 8, 9] when designing the network for a broader application.
 
-## Redesigned Encoder
+## Modified Encoder
 
 <img width="280" height="294" alt="image" src="https://github.com/user-attachments/assets/df402202-8b48-42cd-a2c3-176f7434fc85" />
 
@@ -82,11 +82,11 @@ _Original Encoder_
 
 <img width="964" height="422" alt="image" src="https://github.com/user-attachments/assets/ee0d300f-7b58-4169-8574-e4595c5be0da" />
 
-_Redesigned Encoder_
+_Modified Encoder_
 
 <img width="1050" height="407" alt="image" src="https://github.com/user-attachments/assets/017138e6-4be4-499d-bed1-36a1d9750ff8" />
 
-_Redesigned Network_
+_Modified Network_
 
 ### Training & Testing
 
