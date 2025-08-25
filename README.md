@@ -32,7 +32,7 @@ _Masked Image_
 
 ### Training & Testing
 
-Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 1 Model on both of them, and tested the Model with images outside of the training set. The Model Setup and training can be found in 'Traditional U-Net.ipynb'.
+Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 1 Model on both of them, and tested the Model with images outside of the training set. The Model Setup and training can be found in 'Phase 1 U-Net.ipynb'.
 
 The network is capable to deliver result in accuracy.
 
