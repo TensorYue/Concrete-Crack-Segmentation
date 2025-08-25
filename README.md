@@ -98,7 +98,7 @@ _Modified Network_
 
 ### Training & Testing
 
-Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 2 Model on CRACK 500 subset only, and tested the Model with images from both subsets. The Model Setup and training can be found in 'Inception U-Net.ipynb'.
+Please note that the dataset includes two subsets: CFD, and CRACK 500, we created the training set and trained the Phase 2 Model on CRACK 500 subset only, and tested the Model with images from both subsets. The Model Setup and training can be found in 'Phase 2 Inception U-Net.ipynb'.
 
 <img width="1089" height="403" alt="image" src="https://github.com/user-attachments/assets/3161b7e5-b838-4c3a-b7d4-ed8d414f5b7e" />
 
